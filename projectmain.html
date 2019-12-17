@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="projectmain.css">
+    <!-- External Script -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <!-- left half of page -->
+        <td>
+          <table>
+            <tr>
+              <td width = "15%"><img src="assets/logo.png"class="pageLogo"/></td>
+              <td width ="85%"><h1>History of the San Francisco 49ers</h1></td>
+            </tr>
+            <tr>
+              <td class = "year" width ="20%"id ='yer'>1967</td>
+              <td>
+                <table class="basicInfo" cellspacing="10">
+                  <tr>
+                        <td><b><u>Record </u></b></td>
+                        <td><b><u>Division Finish </u></b></td>
+                        <td><b><u>Season Result </u></b></td>
+                  </tr>
+                  <tr>
+                    <td id="rec">7-7</td>
+                    <td id="divfin">3rd of 4</td>
+                    <td id="finish">Missed Playoffs</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" id="sharedGrid">
+                  <div id="record"></div>
+                  <div id="PFPA"></div>
+              </td>
+            </tr>
+            <tr>
+              <td font size="12">All data from</td>
+              <td><a href="https://www.pro-football-reference.com/teams/sfo/index.htm" font size="12">pro-football-reference</td> 
+            </tr>
+          </table>
+        </td>
+        <!-- right half of page -->
+        <td>
+          <table>
+            <tr height = 40px></tr>
+            <tr>
+              <td align ="center" class="lombardi"><b>Superbowl Championships</b></td>
+            </tr>
+            <tr>
+              <td align="center"><img  id ="trophy" src="assets/0troph.jpg" style="width:50%"/></td>
+            </tr>
+            <tr>
+              <td>
+                <table>
+                  <tr>
+                    <td id="myCell"><b>Head Coach</b></td>
+                    <td id="myCell"><b>Quarterback</b></td>
+                    <td rowspan="3">
+                      <table>
+                        <tr><td><b><u>Team MVP</b></u></td></tr>
+                        <tr><td id="mvp">Dave Wilcox</td></tr>
+                        <tr><td><b><u>Leading Rusher</b></u></td></tr>
+                        <tr><td id="rush">Ken Willard</td></tr>
+                        <tr><td><b><u>Leading Receiver</b></u></td></tr>
+                        <tr><td id="receive">Gene Washington</td></tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td id="myCell"><img  id ="coachpic" src="assets/Jack Christiansen.jpg" style="width:120px; height:180px;"/></td>
+                    <td id="myCell"><img  id ="qbpic" src="assets/John Brodie.jpg" style="width:120px; height:180px;"/></td>
+                  </tr>
+                  <tr>
+                    <td id ="coachname">Jack Christiansen</td>
+                    <td id = "qbname">John Brodie</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td width = "30%">
+                <div id="polar">polar chart</div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Internal JS Import -->
+    <script src="projectmain.js"></script>
+  </body>
+</html>
